@@ -1,0 +1,100 @@
+appointment_ID,patient_id,doctor_id,payment_id,status,location,Fecha Cita,Hora Cita,Motivo
+1,52,1,1,Cancelada,Sede Norte,2025-02-03,10:00,Dolor de cabeza persistente
+2,9,1,2,Confirmada,Sede Norte,2025-01-08,13:00,Chequeo anual
+3,35,1,1,Cancelada,Sede Centro,2025-02-14,08:30,Control de medicación
+4,81,2,1,Cancelada,Sede Norte,2025-06-18,12:30,Examen dermatológico
+5,9,1,3,Confirmada,Sede Norte,2025-03-04,13:30,Dolor de cabeza persistente
+6,23,2,4,Pendiente,Sede Centro,2025-05-01,11:30,Consulta de rutina
+7,8,2,2,Reprogramada,Sede Sur,2025-06-28,13:00,Chequeo anual
+8,79,3,2,Cancelada,Sede Norte,2025-03-21,12:00,Examen dermatológico
+9,50,3,1,Pendiente,Sede Sur,2025-02-20,09:30,Fiebre alta
+10,57,2,4,Pendiente,Sede Norte,2025-04-29,11:00,Consulta de rutina
+11,39,2,2,Cancelada,Sede Norte,2025-04-01,14:00,Control de medicación
+12,31,2,3,Reprogramada,Sede Sur,2025-05-05,17:00,Dolor de cabeza persistente
+13,1,3,4,Reprogramada,Sede Sur,2025-02-18,16:30,Dolor abdominal
+14,45,1,1,Pendiente,Sede Norte,2025-03-08,13:00,Control de medicación
+15,19,4,2,Reprogramada,Sede Centro,2025-02-20,15:00,Examen dermatológico
+16,44,2,1,Confirmada,Sede Sur,2025-05-16,12:30,Control de medicación
+17,82,4,1,Pendiente,Sede Centro,2025-01-01,10:00,Seguimiento pediátrico
+18,92,3,4,Cancelada,Sede Sur,2025-01-22,12:30,Dolor de cabeza persistente
+19,94,4,1,Confirmada,Sede Norte,2025-03-21,14:00,Control de medicación
+20,50,4,3,Cancelada,Sede Sur,2025-05-28,11:00,Dolor abdominal
+21,16,2,3,Pendiente,Sede Sur,2025-05-14,09:30,Chequeo anual
+22,84,1,4,Confirmada,Sede Norte,2025-03-23,17:30,Dolor de cabeza persistente
+23,23,3,3,Pendiente,Sede Sur,2025-05-11,17:00,Examen dermatológico
+24,74,1,2,Cancelada,Sede Norte,2025-01-04,13:30,Consulta de rutina
+25,38,4,3,Reprogramada,Sede Centro,2025-04-26,08:00,Examen dermatológico
+26,75,4,2,Reprogramada,Sede Norte,2025-05-03,15:00,Consulta de rutina
+27,40,3,2,Confirmada,Sede Centro,2025-02-28,13:30,Chequeo anual
+28,98,1,2,Reprogramada,Sede Centro,2025-05-08,09:00,Dolor de cabeza persistente
+29,63,1,4,Reprogramada,Sede Centro,2025-03-29,16:00,Chequeo anual
+30,9,3,2,Cancelada,Sede Norte,2025-01-29,13:00,Dolor abdominal
+31,18,1,4,Cancelada,Sede Norte,2025-03-05,16:00,Seguimiento pediátrico
+32,75,2,4,Reprogramada,Sede Norte,2025-01-11,09:30,Control de presión arterial
+33,34,1,4,Confirmada,Sede Centro,2025-01-31,14:00,Control de presión arterial
+34,72,2,3,Pendiente,Sede Norte,2025-04-23,12:30,Examen dermatológico
+35,61,3,1,Reprogramada,Sede Sur,2025-06-26,17:00,Examen dermatológico
+36,47,2,1,Confirmada,Sede Sur,2025-02-22,15:30,Chequeo anual
+37,63,1,2,Cancelada,Sede Centro,2025-06-29,10:00,Chequeo post-operatorio
+38,86,2,3,Pendiente,Sede Norte,2025-05-28,16:30,Fiebre alta
+39,16,2,3,Confirmada,Sede Norte,2025-06-09,11:30,Examen dermatológico
+40,93,2,4,Pendiente,Sede Centro,2025-06-20,14:00,Seguimiento pediátrico
+41,20,3,1,Pendiente,Sede Norte,2025-02-02,10:30,Dolor de cabeza persistente
+42,22,1,2,Confirmada,Sede Centro,2025-04-14,17:00,Control de presión arterial
+43,66,1,3,Pendiente,Sede Centro,2025-02-03,13:30,Control de medicación
+44,54,1,4,Pendiente,Sede Norte,2025-03-29,08:00,Examen dermatológico
+45,69,4,4,Confirmada,Sede Sur,2025-03-29,08:00,Dolor de cabeza persistente
+46,48,2,2,Cancelada,Sede Sur,2025-02-15,10:00,Chequeo post-operatorio
+47,43,2,4,Reprogramada,Sede Sur,2025-04-27,11:30,Control de presión arterial
+48,33,3,2,Confirmada,Sede Sur,2025-01-29,09:00,Examen dermatológico
+49,75,1,3,Confirmada,Sede Norte,2025-01-14,17:30,Control de presión arterial
+50,25,2,3,Confirmada,Sede Sur,2025-03-19,09:00,Control de presión arterial
+51,90,4,1,Reprogramada,Sede Centro,2025-05-23,10:00,Control de presión arterial
+52,31,3,4,Cancelada,Sede Sur,2025-06-16,09:30,Chequeo post-operatorio
+53,62,3,3,Reprogramada,Sede Sur,2025-02-24,14:00,Dolor abdominal
+54,45,3,3,Pendiente,Sede Norte,2025-02-14,14:00,Control de medicación
+55,3,1,2,Reprogramada,Sede Norte,2025-04-07,08:00,Seguimiento pediátrico
+56,83,1,3,Pendiente,Sede Norte,2025-03-23,12:30,Seguimiento pediátrico
+57,37,3,2,Reprogramada,Sede Centro,2025-01-04,16:00,Control de presión arterial
+58,94,1,1,Cancelada,Sede Sur,2025-05-04,08:00,Control de medicación
+59,35,2,2,Pendiente,Sede Sur,2025-02-25,15:30,Chequeo post-operatorio
+60,53,3,1,Pendiente,Sede Centro,2025-03-19,14:30,Control de presión arterial
+61,49,3,3,Cancelada,Sede Norte,2025-05-01,15:30,Seguimiento pediátrico
+62,57,4,1,Confirmada,Sede Norte,2025-05-18,09:00,Dolor abdominal
+63,70,3,2,Pendiente,Sede Centro,2025-01-02,13:30,Chequeo anual
+64,86,3,4,Reprogramada,Sede Norte,2025-02-11,16:30,Control de medicación
+65,42,2,3,Cancelada,Sede Norte,2025-06-15,15:00,Chequeo anual
+66,71,2,2,Pendiente,Sede Centro,2025-04-04,17:00,Consulta de rutina
+67,59,2,1,Pendiente,Sede Norte,2025-01-16,17:00,Fiebre alta
+68,73,1,3,Confirmada,Sede Sur,2025-01-28,15:00,Fiebre alta
+69,59,2,4,Cancelada,Sede Norte,2025-01-08,10:00,Consulta de rutina
+70,25,3,4,Pendiente,Sede Sur,2025-02-20,12:30,Dolor abdominal
+71,29,3,3,Reprogramada,Sede Sur,2025-04-21,09:30,Dolor de cabeza persistente
+72,7,4,2,Pendiente,Sede Norte,2025-01-12,15:30,Fiebre alta
+73,25,1,3,Cancelada,Sede Centro,2025-04-25,14:30,Control de medicación
+74,39,2,3,Pendiente,Sede Centro,2025-03-02,10:00,Consulta de rutina
+75,3,3,3,Reprogramada,Sede Sur,2025-05-11,16:30,Chequeo anual
+76,13,2,2,Pendiente,Sede Sur,2025-03-20,08:30,Consulta de rutina
+77,55,3,4,Confirmada,Sede Centro,2025-01-16,16:30,Examen dermatológico
+78,85,4,4,Confirmada,Sede Sur,2025-03-08,13:00,Dolor de cabeza persistente
+79,25,3,3,Pendiente,Sede Sur,2025-01-13,14:00,Dolor de cabeza persistente
+80,5,3,4,Confirmada,Sede Sur,2025-03-11,12:00,Examen dermatológico
+81,13,1,2,Reprogramada,Sede Sur,2025-01-24,11:00,Control de medicación
+82,86,2,3,Reprogramada,Sede Sur,2025-02-06,13:30,Control de presión arterial
+83,99,3,4,Pendiente,Sede Centro,2025-06-15,12:30,Dolor abdominal
+84,9,2,1,Pendiente,Sede Sur,2025-03-21,15:00,Seguimiento pediátrico
+85,68,1,4,Pendiente,Sede Sur,2025-05-20,10:00,Control de presión arterial
+86,79,1,1,Cancelada,Sede Sur,2025-06-25,14:30,Seguimiento pediátrico
+87,89,4,4,Reprogramada,Sede Sur,2025-03-07,10:00,Dolor abdominal
+88,97,1,2,Confirmada,Sede Norte,2025-05-08,08:00,Control de medicación
+89,29,4,2,Confirmada,Sede Sur,2025-05-01,16:00,Consulta de rutina
+90,1,2,3,Confirmada,Sede Centro,2025-01-18,15:00,Consulta de rutina
+91,91,2,4,Pendiente,Sede Norte,2025-01-16,11:30,Consulta de rutina
+92,66,4,1,Pendiente,Sede Norte,2025-02-04,14:30,Control de medicación
+93,13,3,4,Reprogramada,Sede Sur,2025-01-20,09:00,Fiebre alta
+94,78,1,4,Reprogramada,Sede Sur,2025-06-11,11:00,Dolor abdominal
+95,20,3,3,Pendiente,Sede Norte,2025-06-14,13:30,Fiebre alta
+96,6,2,1,Pendiente,Sede Norte,2025-06-05,13:30,Control de presión arterial
+97,56,4,2,Pendiente,Sede Sur,2025-06-11,12:00,Fiebre alta
+98,94,1,1,Cancelada,Sede Centro,2025-06-27,09:30,Seguimiento pediátrico
+99,65,1,4,Confirmada,Sede Centro,2025-05-20,15:00,Dolor abdominal
