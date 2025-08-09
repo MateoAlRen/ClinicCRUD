@@ -14,7 +14,7 @@ async function connectDB() {
         host: "localhost",
         user: "root",
         password: "Qwe.123*",
-        database: "clinic_crud"
+        database: "clinic_crudd"
     })
 };
 
