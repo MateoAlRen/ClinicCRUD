@@ -61,6 +61,42 @@ app.get("/doctors", async (req, res) => {
     };
 });
 
+app.post("/doctors", async (req,res) => {
+    const {hospital_email, full_name, identification} = req.body;
+
+    try {
+        const connection = await connectDB();
+        const [result] = await connection.execute("INSERT INTO doctor (hospital_email, full_name, identification) VALUES (?,?,?)", [hospital_email,full_name,identification]);
+        await connection.end();
+        res.status(201).json({
+            message: "Added succesfully!",
+            insertedId: result.insertId
+        });
+    } catch (error) {
+        console.error(`The doctor hasn't be added: ${error}`)
+        res.status(500).json({error: "Failed to post"});
+    }
+})
+
+app.delete("/doctors/:id", async (req,res) => {
+    const {doctor_id} = req.params;
+
+    try {
+        const connection = await connectDB();
+        const [result] = await connection.execute("DELETE FROM doctor WHERE doctor_id = ?", [doctor_id]);
+        await connection.end();
+        res.status(200).json({
+            message: "Deleted succesfully!",
+            id: result
+        });
+    } catch (error) {
+        res.status(500).json({error: "The removed doctor went wrong"});
+        console.error(`The doctor hasn't been deleted: ${error}`);
+    }
+})
+
+
+
 app.get("/administrator", async (req, res) => {
     try {
         const connection = await connectDB();
