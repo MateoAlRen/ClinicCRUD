@@ -79,11 +79,11 @@ app.post("/doctors", async (req,res) => {
 })
 
 app.delete("/doctors/:id", async (req,res) => {
-    const {doctor_id} = req.params;
+    const {id} = req.params;
 
     try {
         const connection = await connectDB();
-        const [result] = await connection.execute("DELETE FROM doctor WHERE doctor_id = ?", [doctor_id]);
+        const [result] = await connection.execute("DELETE FROM doctor WHERE doctor_id = ?", [id]);
         await connection.end();
         res.status(200).json({
             message: "Deleted succesfully!",
@@ -92,6 +92,24 @@ app.delete("/doctors/:id", async (req,res) => {
     } catch (error) {
         res.status(500).json({error: "The removed doctor went wrong"});
         console.error(`The doctor hasn't been deleted: ${error}`);
+    }
+})
+
+app.patch("/doctors/:id", async (req, res) => {
+    const {id} = req.params;
+    const {full_name, hospital_email, identification} = req.body;
+
+    try {
+        const connection = await connectDB();
+        const [result] = await connection.execute("UPDATE doctor SET full_name = ?, hospital_email = ?, identification = ? WHERE doctor_id = ?", [full_name,hospital_email,identification,id]);
+        await connection.end();
+        res.status(200).json({
+            message: "Updated succesfully!",
+            id: result
+        });
+    } catch (error) {
+        res.status(500).json({error: "The doctor can't be updated"});
+        console.error(`The doctor hasn't be updated: ${error}`);
     }
 })
 
