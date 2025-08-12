@@ -290,7 +290,12 @@ async function modifyDoctor(idDoctor, nameDoctor, emailDoctor, ideDoctor) {
       </div>
     `
 
-    document.getElementById("confirmModify").addEventListener("click", (e) => {
+    
+};
+
+ document.getElementById("confirmModify").addEventListener("click", (e) => {
+        e.preventDefault();
+
         let namemodDoctor = document.getElementById("namemodDoctor").value;
         let emailmodDoctor = document.getElementById("emailmodDoctor").value;
         let ideDoctor = Number(document.getElementById("idemodDoctor").value);
@@ -302,7 +307,7 @@ async function modifyDoctor(idDoctor, nameDoctor, emailDoctor, ideDoctor) {
         updateDoctor(body, idDoctor);
     });
 
-    async function updateDoctor(body, idDoctor) {
+async function updateDoctor(body, idDoctor) {
         try {
             const res = await fetch(`http://localhost:3000/doctors/${idDoctor}`, {
                 method: "PATCH",
@@ -328,6 +333,5 @@ async function modifyDoctor(idDoctor, nameDoctor, emailDoctor, ideDoctor) {
         console.error(`There's a problem with your method: ${error}`);
     }
     };
-};
 
 };

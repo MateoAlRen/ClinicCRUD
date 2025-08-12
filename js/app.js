@@ -1,6 +1,11 @@
 import express from "express";
 import cors from "cors";
 import {createConnection} from "mysql2/promise";
+import csv from "csv-parser";
+import fs from "fs";
+import multer from "multer";
+import path from "path";
+
 
 const PORT = 3000;
 
@@ -19,6 +24,42 @@ async function connectDB() {
 };
 
 connectDB();
+
+const upload = multer({dest: path.join(process.cwd(), "uploads/")});
+
+app.post("/loadDoctors", upload.single("file"), async (req, res) => {
+    let filePath = req.file.path;
+
+    fs.createReadStream(filePath)
+    .pipe(csv())
+    .on("data", async (info) => {
+        const {hospital_email,full_name,identification} = info;
+
+        try {
+        const connection = await connectDB();
+        const [result] = await connection.execute("INSERT INTO doctor (hospital_email, full_name, identification) VALUES (?,?,?)", [hospital_email,full_name,identification]);
+        await connection.end();
+        res.status(201).json({
+            message: "Added succesfully!",
+            insertedId: result.insertId
+        });
+    } catch (error) {
+        console.error(`The doctor hasn't be added: ${error}`)
+        res.status(500).json({error: "Failed to post"});
+    };
+
+    fs.unlink(filePath, er => {
+        if (er){
+            console.error(er);
+        }
+    });
+    });
+
+    
+    
+})
+
+
 
 app.listen(PORT, () => {
     console.log("ready to go");
@@ -126,3 +167,4 @@ app.get("/administrator", async (req, res) => {
         res.status(500).json({error: "Cannot get administrator"})
     };
 });
+
