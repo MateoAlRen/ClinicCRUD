@@ -5,9 +5,12 @@ import csv from "csv-parser";
 import fs from "fs";
 import multer from "multer";
 import path from "path";
+import dotenv  from "dotenv";
+
+dotenv.config();
 
 
-const PORT = 3000;
+const PORT = process.env.DB_PORT || 3000;
 
 const app = express();
 
@@ -16,12 +19,14 @@ app.use(express.json());
 
 async function connectDB() {
     return await createConnection({
-        host: "localhost",
-        user: "root",
-        password: "Qwe.123*",
-        database: "clinic_crud"
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_NAME
     })
 };
+
+
 
 connectDB();
 
